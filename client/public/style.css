@@ -1,0 +1,260 @@
+* { -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    background:#282c34;
+    --bodyTextColor: #61dafb;
+    --navColor: #202329;
+    color: var(--bodyTextColor)
+    /* color: #61dafb; */
+    /* color: white; */
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--navColor);
+}
+::-webkit-scrollbar-thumb {
+    background: #444a57;
+}
+
+.add {
+    color: lightslategrey;
+}
+
+.add:hover {
+    color: rgb(92, 117, 143);
+    cursor: pointer;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+
+.home-container {
+    margin-right:auto;
+    margin-left:auto;
+}
+
+@media (min-width: 768px) {
+    .home-container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .home-container {
+        width: 970px;
+        
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-container {
+        width: 1300px;
+        
+    }
+}
+
+h1,h2,h3,h5,h6 {
+    font-weight: 300;
+}
+
+.new-Link {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 300;
+    width: 10%;
+    margin: 0 1rem;
+}
+
+.new-Link:hover {
+    text-decoration: none;
+    color: black;
+}
+/* ========================================= */
+
+/* SPLASH PAGE */
+/* =============================================== */
+.jumbotron {
+    height: 25rem !important;
+    background-color: inherit !important
+}
+
+.section-card {
+    height: 20rem;
+    color: black;
+    background-color: white;
+}
+
+.container-text {
+    text-align: center;
+}
+
+.center {
+    /* width: 25%; */
+    font-size: 4rem;
+    text-align: center;
+    margin: 0 auto 1rem !important;
+}
+
+.center-small {
+    text-align: center;
+    font-size: 1.7rem;
+    /* width: 25%; */
+    margin:0 auto 1rem !important;
+}
+
+.center-signup {
+    text-align: center !important;
+    margin:0 auto !important;
+}
+/* =========================================== */
+
+/* NAVBAR */
+/* ========================================= */
+.dropdown-menu {
+    left: -6rem !important;
+}
+
+.navbar {
+    background:var(--navColor) !important;
+    color: var(--bodyTextColor)  !important;
+}
+
+.nav-item {
+    margin: 0 0.8rem !important;
+    text-decoration: none !important;
+    color: white;
+    transition: 0.5s color;;
+}
+.nav-item:hover {
+    color: var(--bodyTextColor)
+}
+
+.brand-logo {
+    font-size: 2rem;
+    font-weight:300;
+    color: var(--bodyTextColor)  !important;
+    transition: color 1s;
+}
+
+.brand-logo:hover {
+    text-decoration: none;
+    color: #dbedf5 !important;
+}
+
+.nav-button {
+    color: black !important;
+    background: var(--bodyTextColor) !important;
+}
+
+/* ================================================ */
+
+/* ADMIN */
+/* ===================================================== */
+table {
+    width: 100%;
+}
+
+/* ========================================================= */
+
+/* INSTRUCTOR */
+/* ======================================================= */
+.hover {
+    /* width: 15%; */
+    transition: background-color 1s color 1s
+}
+
+.hover:hover {
+    cursor: pointer;
+    background-color:#007bff;
+    color: white
+}
+/* =========================================== */
+
+/* STUDENT LINKS */
+/* ======================================================= */
+.student-link {
+    text-decoration: none;
+    color: var(--bodyTextColor);
+}
+
+.student-link:hover {
+    text-decoration: none;
+    color: #51b4cf ;
+}
+
+li {
+    background:#202329 !important;
+    color: var(--bodyTextColor) !important;
+}
+
+li:hover {
+    background: #333842 !important;
+}
+
+.btn {
+    background: var(--bodyTextColor);
+    /* margin-right: 0.5rem; */
+    color: black;
+    border: none;
+    /* font-weight: 400 !important; */
+
+}
+
+
+.btn:hover {
+    background: #51b4cf !important;
+}
+/* ====================================== */
+
+/* FORMAT LIST */
+/* ================================================= */
+.active {
+    background: var(--navColor);
+    color: var(--bodyTextColor);
+    outline: none !important;
+}
+
+/* ================================== */
+
+/* MODAL */
+/* ===================== */
+.add-modal {
+    background: var(--navColor);
+    padding: 1rem;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    /* width: 15rem; */
+    /* height: 10rem; */
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+    animation-duration: 0.01s;
+    animation-delay: 0.1s;
+    border: 1px solid #1b1e22;
+    border-radius: 2%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.cohort-link {
+    padding: 0.7rem;
+    border: 1px solid var(--bodyTextColor);
+    /* border-radius:5%; */
+}
+
+
